@@ -1,0 +1,11 @@
+<%= form_for @animal, :url => animal_path(@animal), :method => :patch do |f| %>
+<table>
+	<%= render :partial => 'form',:locals => {:f=>f} %>
+	<tr>
+		<td>
+			<%= f.submit "Update"%>
+		</td>
+	</tr>
+</table>
+
+<% end %>

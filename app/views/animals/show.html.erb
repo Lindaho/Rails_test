@@ -1,0 +1,21 @@
+<table>
+	<tr>
+		<td>
+			<%= @animal.name %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<%= @animal.sex%>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<%= simple_format(@animal.desc) %>
+		</td>
+	</tr>
+</table>
+
+<p>
+	<%= link_to 'Back to Index', animals_path %>
+</p>

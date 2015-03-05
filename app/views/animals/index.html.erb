@@ -1,0 +1,12 @@
+<ul>
+	<% @animals.each do |animal| %>
+	<li>
+		<%= animal.name %>
+		<%= link_to 'Show', animal_path(animal) %>
+		<%= link_to 'Edit', edit_animal_path(animal) %>
+		<%= link_to 'Delete', animal_path(animal), :method => :delete %>
+	</li>
+	<% end %>
+	<%= paginate @animals %>
+	<%= link_to 'New animal', new_animal_path %>
+</ul>

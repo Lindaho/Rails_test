@@ -1,0 +1,18 @@
+<%= form_for @animal, :url => animals_path(@animal) do |f| %>
+<table>
+	<%= render :partial => 'form', :locals => {:f => f }%>
+	<tr>
+		<td>
+			<%= f.submit "Create" %>
+		</td>
+	</tr>
+</table>
+<% end %>
+
+
+
+
+
+
+
+
